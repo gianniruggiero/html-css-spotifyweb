@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* wrapper generale */
 .page-wrapper {
   height: 100vh;
   background-color: #000;
@@ -14,14 +15,7 @@ main {
   display: flex;
 }
 
-/* main::after {
-  content: "";
-  display: block;
-  clear: both;
-} */
-
 aside {
-  /* float: left; */
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -29,21 +23,24 @@ aside {
   background-color: green;
 }
 
+/* logo spotify */
 .logo {
   background-color: blue;
 }
 
+/* aside nav principale Home - Cerca - La tua libreria */
 .main-nav {
   background-color: orange;
 }
 
+/* aside nav secondaria playlist */
 .secondary-nav {
   background-color: lightblue;
   height: 100%;
   overflow: hidden;
 }
 
-/* per far uscire la scroll-bar vertical solo sul <ul> ci serve overflow:hidden e un altezza fissa */
+/* per far uscire la scroll-bar verticale su <ul> della secondary-nav */
 .playlist-list {
   background-color: pink;
   height: calc(100% - 50px);
@@ -54,9 +51,8 @@ aside {
   height: 50px;
 }
 
-
 .aside-bottom {
-  background-color: grey;
+  background-color: lightgrey;
   /* position: fixed;
   bottom: 80px; */
   margin-top: auto;
@@ -66,7 +62,6 @@ aside {
 }
 
 .main-content {
-  /* float: left; */
   overflow-y: auto;
   height: 100%;
   width: calc(100% - 300px);
@@ -77,7 +72,6 @@ aside {
 .btn {
   color: white;
   background-color: purple;
-  /* line-height: 80px; */
 }
 
 .upgrade {
@@ -94,10 +88,55 @@ aside {
   align-items: center;
 }
 
+/* FOOTER */
+
 footer  {
-  position: relative;
-  background-color:  red;
+  /* position: relative; */
+  background-color: darkgrey;
   height: 80px;
+  display: flex;
+  justify-content: space-between;
   /* position: fixed; */
   /* bottom: 0px; */
+}
+
+.footer_sx {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer_cover {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  margin: 0px 10px;
+}
+
+.song_info {
+  width: 120px;
+}
+
+.footer_cx {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.player_cmd {
+  height: 50px;
+  width: 450px;
+  background-color: red;
+}
+
+.footer_dx {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.footer_volume {
+  width: 250px;
+  height: 40px;
+  background-color: lightblue;
 }
