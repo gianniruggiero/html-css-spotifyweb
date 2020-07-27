@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  height: 100vh;
+  background-color: #000;
+}
+
+main {
+  height: calc(100% - 80px);
+  display: flex;
+}
+
+/* main::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+aside {
+  /* float: left; */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  background-color: green;
+}
+
+.logo {
+  background-color: blue;
+}
+
+.main-nav {
+  background-color: orange;
+}
+
+.secondary-nav {
+  background-color: lightblue;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* per far uscire la scroll-bar vertical solo sul <ul> ci serve overflow:hidden e un altezza fissa */
+.playlist-list {
+  background-color: pink;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+}
+
+.playlist-title {
+  height: 50px;
+}
+
+
+.aside-bottom {
+  background-color: grey;
+  /* position: fixed;
+  bottom: 80px; */
+  margin-top: auto;
+  width: 300px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.main-content {
+  /* float: left; */
+  overflow-y: auto;
+  height: 100%;
+  width: calc(100% - 300px);
+  background-color: yellow;
+  padding-left: 20px;
+}
+
+.btn {
+  color: white;
+  background-color: purple;
+  /* line-height: 80px; */
+}
+
+.upgrade {
+  height: 80px;
+  width: calc(100% - 300px);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer  {
+  position: relative;
+  background-color:  red;
+  height: 80px;
+  /* position: fixed; */
+  /* bottom: 0px; */
+}
