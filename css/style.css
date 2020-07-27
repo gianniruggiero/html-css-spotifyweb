@@ -197,3 +197,32 @@ footer  {
   height: 40px;
   background-color: lightblue;
 }
+
+
+/* MEDIA QUERY MD */
+
+@media screen and (max-width: 991px) {
+
+  .list_track li {
+    flex-basis: calc(100% / 2);
+  }
+
+  footer {
+    background-color: yellow;
+  }
+
+}
+
+/* MEDIA QUERY MD */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .list_track li {
+    flex-basis: calc(100% / 4);
+  }
+
+  footer {
+    background-color: yellow;
+  }
+
+}
