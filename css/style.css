@@ -1,7 +1,26 @@
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* MIX */
+
+.mgb_30 {
+  margin-bottom: 30px;
+}
+
+.list-inline  {
+  list-style: none;
+}
+
+.list-inline li  {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* wrapper generale */
@@ -61,12 +80,14 @@ aside {
   flex-shrink: 0;
 }
 
+/* MAIN CONTENT */
+
 .main-content {
   overflow-y: auto;
   height: 100%;
   width: calc(100% - 300px);
   background-color: yellow;
-  padding-left: 20px;
+  padding: 0px 20px;
 }
 
 .btn {
@@ -78,7 +99,7 @@ aside {
   height: 80px;
   width: calc(100% - 300px);
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   right: 0;
@@ -86,6 +107,34 @@ aside {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.nav_main_content {
+  margin-top: 80px;
+  padding: 10px 0px;
+}
+
+.nav_main_content li {
+  padding: 0px 10px;
+}
+
+.track_cover {
+  width: 150px;
+  height: 150px;
+  background-color: lightcyan;
+}
+
+.list_recently {
+  display: flex;
+}
+
+.list_recently li {
+  flex-basis: calc(100% / 6);
+  padding: 5px;
+}
+
+.list_recently li img {
+  width: 100%;
 }
 
 /* FOOTER */
