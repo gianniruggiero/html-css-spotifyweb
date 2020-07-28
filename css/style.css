@@ -22,9 +22,18 @@ body {
   margin-top: 10px;
 }
 
+.mgt_15 {
+  margin-top: 15px;
+}
+
 .mgt_20 {
   margin-top: 20px;
 }
+
+.mgt_30 {
+  margin-top: 30px;
+}
+
 /* PADDING */
 
 .pdb_20 {
@@ -379,6 +388,25 @@ main {
 
 .list_popular li img {
   border-radius: 50%;
+}
+
+.list_box_track {
+  position: relative;
+}
+
+.overlayer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.list_box_track:hover .overlayer {
+  display: block;
+  cursor: pointer;
 }
 
 /* FOOTER */
