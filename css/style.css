@@ -249,7 +249,7 @@ main {
   overflow-y: auto;
   height: 100%;
   width: calc(100% - 200px);
-  background-color: yellow;
+  background-color: #141922;
   padding: 0px 20px;
 }
 
@@ -291,11 +291,46 @@ main {
 .nav_main_content {
   margin-top: 80px;
   padding: 10px 0px;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 /* distanziamento voci di menu della nav menu principale */
 .nav_main_content li {
   padding: 0px 10px;
+  color: #717171;
+}
+
+/* colore voci di menu della nav menu principale */
+.nav_main_content a {
+  color: #717171;
+}
+
+/* barra verde per evidenziare voce di menu della nav menu principale */
+.nav_main_content #evidenza::after {
+  content:"";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #adff2f;
+  margin: auto;
+  margin-top: 3px;
+}
+
+/* colore hover voci di menu della nav menu principale */
+.nav_main_content a:hover {
+  color: #fff;
+}
+
+/* all'active esce la barra verde */
+.nav_main_content a:active::after {
+  content:"";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #adff2f;
+  margin: auto;
+  margin-top: 3px;
 }
 
 /* dimensioni box delle cover dei vari aplbum traclist, ecc */
