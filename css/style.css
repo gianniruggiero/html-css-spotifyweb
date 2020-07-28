@@ -34,7 +34,7 @@ main {
   display: flex;
 }
 
-aside {
+.aside_page {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -158,6 +158,8 @@ footer  {
 }
 
 .footer_sx {
+  background-color: lightgreen;
+  flex-basis: calc(100% / 3);
   height: 100%;
   display: flex;
   align-items: center;
@@ -174,20 +176,27 @@ footer  {
   width: 120px;
 }
 
+
 .footer_cx {
+  background-color: lightgrey;
+  flex-basis: calc(100% / 3);
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
 .player_cmd {
   height: 50px;
-  width: 450px;
+  /* width: 450px; */
   background-color: red;
 }
 
 .footer_dx {
+  background-color: pink;
+  flex-basis: calc(100% / 3);
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
 }
@@ -201,6 +210,20 @@ footer  {
 
 /* MEDIA QUERY MD */
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .list_track li {
+    flex-basis: calc(100% / 4);
+  }
+
+  footer {
+    background-color: yellow;
+  }
+
+}
+
+/* MEDIA QUERY SM */
+
 @media screen and (max-width: 991px) {
 
   .list_track li {
@@ -211,18 +234,30 @@ footer  {
     background-color: yellow;
   }
 
-}
-
-/* MEDIA QUERY MD */
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-
-  .list_track li {
-    flex-basis: calc(100% / 4);
+  /* mette loghi cuore e folder in colonna */
+  .heart_folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  footer {
-    background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  /* nasconde elementi della aside */
+  .heart_folder, .secondary-nav, .aside-bottom {
+    display: none
+  }
+
+  .aside_page, .aside_bottom {
+    width: 80px;
+  }
+
+  .main-content, .upgrade {
+    width: calc(100% - 80px);
   }
 
 }
