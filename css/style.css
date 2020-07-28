@@ -24,8 +24,8 @@ body {
 
 /* COLORS */
 
-col_red {
-  color: red;
+.col_white {
+  color: #000;
 }
 
 /* MIX */
@@ -35,6 +35,10 @@ col_red {
 }
 
 .list_no_dec a {
+  text-decoration: none;
+}
+
+.no_dec {
   text-decoration: none;
 }
 
@@ -57,6 +61,9 @@ main {
   display: flex;
 }
 
+
+/* ASIDE_PAGE */
+
 .aside_page {
   width: 300px;
   height: 100%;
@@ -73,6 +80,12 @@ main {
 .aside_page a {
   color: #717171;
 }
+
+/* colore hover su link voci di menu delle nav */
+.aside_page a:hover {
+  color: #fff;
+}
+
 
 /* colore link voci di menu delle nav */
 .main-nav li {
@@ -92,7 +105,23 @@ main {
 .ico_main_nav {
   width: 25px;
   margin-right: 3px;
-  color: red;
+}
+
+/* zona crea playlist (icona + txt)*/
+.crea_pl {
+  font-size: 14px;
+}
+
+.playlist-title {
+  height: 60px;
+}
+
+/* icona piu */
+.fa-plus {
+  font-size: 20px;
+  color: #000;
+  background-color: #a3a3a3;
+  padding: 10px;
 }
 
 /* aside nav secondaria playlist */
@@ -102,14 +131,11 @@ main {
   overflow: hidden;
 }
 
-.playlist-title {
-  height: 50px;
-}
 
 /* per far uscire la scroll-bar verticale su <ul> della secondary-nav */
 .playlist-list {
   background-color: pink;
-  height: calc(100% - 50px);
+  height: calc(100% - 60px);
   overflow-y: auto;
 }
 
