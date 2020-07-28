@@ -28,6 +28,10 @@ body {
   padding-bottom: 20px;
 }
 
+.pdl_10 {
+  padding-left: 10px;
+}
+
 /* COLORS */
 
 .col_white {
@@ -67,7 +71,6 @@ main {
   display: flex;
 }
 
-
 /* ASIDE_PAGE */
 
 .aside_page {
@@ -93,7 +96,7 @@ main {
 
 .green_bar {
   display: none;
-  height: 40px;
+  height: 30px;
   width: 3px;
   background-color: lightgreen;
   position: absolute;
@@ -165,29 +168,78 @@ main {
   padding-left: 10px;
 }
 
+/* SECONDARY NAV */
+
 /* aside nav secondaria playlist */
 .secondary-nav {
   height: 100%;
   overflow: hidden;
 }
 
-
 /* per far uscire la scroll-bar verticale su <ul> della secondary-nav */
 .playlist-list {
-  background-color: pink;
   height: calc(100% - 80px);
   overflow-y: auto;
 }
 
+/* per far uscire la scroll-bar verticale su <ul> della secondary-nav */
+.playlist-list li {
+  padding-bottom: 10px;
+}
+
+
 /* fissa John Doe in basso a destra */
 .aside-bottom {
-  background-color: lightgrey;
   /* position: fixed;
   bottom: 80px; */
   margin-top: auto;
-  width: 200px;
-  height: 80px;
+  /* height: 80px; */
   flex-shrink: 0;
+}
+
+/* sezione installa */
+.installa_sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+/* linea orizzontale separatrice installa / John Doe */
+.hr_line {
+  height: 1px;
+  width: 100%;
+  background-color: #717171;
+}
+
+/* icona di download Installa app */
+.dwnl_ico {
+  width: 14px;
+  vertical-align: middle;
+}
+
+/* icona profilo John Doe */
+.profile_ico {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #808080;
+}
+
+/* sezione John Doe */
+.john_doe_sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.john_doe_sec a:hover h4 {
+  color: #808080;
+}
+
+.john_doe_sec a:hover img {
+  background-color: #000;
 }
 
 /* MAIN CONTENT */
@@ -251,9 +303,6 @@ main {
 .list_popular li img {
   border-radius: 50%;
 }
-
-
-
 
 /* FOOTER */
 
