@@ -5,33 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <title>Spotify Web</title>
 </head>
 <body>
 
-  <!-- page wrapper -->
+  <!-- WRAPPER generale della pagina -->
   <div class="page-wrapper">
     <main>
-      <!-- side bar -->
+      <!-- aside bar della pagina -->
       <aside class="aside_page">
-        <!-- logo -->
-        <div class="logo">Spotify</div>
-        <!-- /logo -->
+        <!-- logo Spotify -->
+        <img class="logo" src="img/logo.svg" alt="logo Spotify">
+        <!-- /logo Spotify -->
         <nav class="main-nav">
-          <ul>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
+          <ul class="de_point list_no_dec">
+            <!-- Home -->
+            <li>
+              <img class="ico_main_nav" src="img/home.svg" alt="icona home">
+              <a href="#">Home</a>
+            </li>
+            <!-- /Home -->
+            <!-- Cerca -->
+            <li>
+              <img class="ico_main_nav" src="img/search.svg" alt="icona home">
+              <a href="#">Cerca</a>
+            </li>
+            <!-- /Cerca -->
+            <!-- La tua libreria -->
+            <li>
+              <img class="ico_main_nav" src="img/libreria.svg" alt="icona home">
+              <a href="#">La tua libreria</a>
+            </li>
+            <!-- /La tua libreria -->
           </ul>
         </nav>
         <!-- secondary nav -->
         <nav class="secondary-nav">
           <div class="playlist-title">
             <h3>PLAYLIST</h3>
-            <a href="#">CREA PLAYLIST</a>
+            <a class="no_dec" href="#">CREA PLAYLIST</a>
           </div>
-          <ul class="playlist-list">
-            <li> <a href="#">Link Playlist</a></li>
+          <ul class="playlist-list list_no_dec">
+            <li> <a class="no_dec" href="#">Link Playlist</a></li>
             <li> <a href="#">Link Playlist</a></li>
             <li> <a href="#">Link Playlist</a></li>
             <li> <a href="#">Link Playlist</a></li>
@@ -58,7 +74,7 @@
         </div>
         <!-- /aside bottom -->
       </aside>
-      <!-- /aside bar -->
+      <!-- /aside bar della pagina -->
 
       <!-- contenuto principale -->
       <section class="main-content">
@@ -69,7 +85,7 @@
         <!-- /pulsante upgrade -->
         <!-- nav contenuto principale -->
         <nav class="nav_main_content text-center">
-          <ul class="nav_main_content_list list-inline">
+          <ul class="nav_main_content_list list-inline de_point">
             <li><a href="#">link 1</a></li>
             <li><a href="#">link 2</a></li>
             <li><a href="#">link 3</a></li>
@@ -199,7 +215,7 @@
     </footer>
     <!-- /footer -->
   </div>
-  <!-- /page wrapper -->
+  <!-- /WRAPPER generale della pagina -->
 
 </body>
 </html>

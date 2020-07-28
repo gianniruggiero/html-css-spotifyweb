@@ -5,14 +5,37 @@
   padding: 0;
 }
 
-/* MIX */
+/* FONT */
+
+/* font generale della pagina */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* MARGIN */
 
 .mgb_20 {
   margin-bottom: 20px;
 }
 
-.list-inline  {
+.mgt_20 {
+  margin-top: 20px;
+}
+
+/* COLORS */
+
+col_red {
+  color: red;
+}
+
+/* MIX */
+
+.de_point  {
   list-style: none;
+}
+
+.list_no_dec a {
+  text-decoration: none;
 }
 
 .list-inline li  {
@@ -23,7 +46,7 @@
   text-align: center;
 }
 
-/* wrapper generale */
+/* WRAPPER GENERALE */
 .page-wrapper {
   height: 100vh;
   background-color: #000;
@@ -35,21 +58,41 @@ main {
 }
 
 .aside_page {
-  display: flex;
-  flex-direction: column;
   width: 300px;
   height: 100%;
-  background-color: green;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #717171;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0px 20px;
 }
 
-/* logo spotify */
+/* colore link voci di menu delle nav */
+.aside_page a {
+  color: #717171;
+}
+
+/* colore link voci di menu delle nav */
+.main-nav li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5px;
+}
+
+/* logo spotify in testa all'aside_page */
 .logo {
-  background-color: blue;
+  width: 60%;
+  padding: 20px 0px;
 }
 
-/* aside nav principale Home - Cerca - La tua libreria */
-.main-nav {
-  background-color: orange;
+/* icone nav main dell'aside Home - Cerca - La tua libreria */
+.ico_main_nav {
+  width: 25px;
+  margin-right: 3px;
+  color: red;
 }
 
 /* aside nav secondaria playlist */
@@ -59,6 +102,10 @@ main {
   overflow: hidden;
 }
 
+.playlist-title {
+  height: 50px;
+}
+
 /* per far uscire la scroll-bar verticale su <ul> della secondary-nav */
 .playlist-list {
   background-color: pink;
@@ -66,10 +113,7 @@ main {
   overflow-y: auto;
 }
 
-.playlist-title {
-  height: 50px;
-}
-
+/* fissa John Doe in basso a destra */
 .aside-bottom {
   background-color: lightgrey;
   /* position: fixed;
@@ -245,7 +289,6 @@ footer  {
 }
 
 @media screen and (max-width: 768px) {
-
 
   /* nasconde elementi della aside */
   .heart_folder, .secondary-nav, .aside-bottom {
