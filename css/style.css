@@ -366,19 +366,12 @@ main {
   font-size: 10px;
   color: #717171;
 }
-/* dimensioni box delle cover dei vari aplbum playlist, ecc */
-.track_cover {
-  width: 150px;
-  height: 150px;
-}
+
+/* list cover */
 
 .list_track {
   display: flex;
   flex-wrap: wrap;
-}
-
-.list_track li img {
-  width: 100%;
 }
 
 .list_track li {
@@ -386,17 +379,27 @@ main {
   padding: 5px;
 }
 
+.list_track li img {
+  width: 100%;
+}
+
 .list_popular li img {
   border-radius: 50%;
 }
 
-.list_box_track {
+/* .list_box_track {
+  position: relative;
+} */
+
+.box_cover {
+  overflow: hidden;
   position: relative;
 }
 
 .overlayer {
   width: 100%;
-  height: 100%;
+  /* DA DOVE ARRIVANO QUESTI 4px ???? debug */
+  height: calc(100% - 4px);
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -404,10 +407,23 @@ main {
   display: none;
 }
 
-.list_box_track:hover .overlayer {
+.box_track:hover .overlayer {
   display: block;
+}
+
+.box_track:hover {
   cursor: pointer;
 }
+
+.fa-play-circle {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 /* FOOTER */
 
