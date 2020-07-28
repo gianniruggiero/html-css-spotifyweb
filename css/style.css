@@ -18,8 +18,14 @@ body {
   margin-bottom: 20px;
 }
 
-.mgt_20 {
-  margin-top: 20px;
+.mgt_10 {
+  margin-top: 10px;
+}
+
+/* PADDING */
+
+.pdb_20 {
+  padding-bottom: 20px;
 }
 
 /* COLORS */
@@ -65,7 +71,7 @@ main {
 /* ASIDE_PAGE */
 
 .aside_page {
-  width: 300px;
+  width: 200px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -74,6 +80,24 @@ main {
   font-size: 12px;
   font-weight: 700;
   padding: 0px 20px;
+}
+
+/* colore link voci di menu delle nav */
+.main-nav li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5px;
+  position: relative;
+}
+
+.green_bar {
+  display: none;
+  height: 40px;
+  width: 3px;
+  background-color: lightgreen;
+  position: absolute;
+  left: -20px;
 }
 
 /* colore link voci di menu delle nav */
@@ -86,6 +110,10 @@ main {
   color: #fff;
 }
 
+/* colore hover su link voci di menu delle nav */
+.main-nav li:hover .green_bar {
+  display: block;
+}
 
 /* colore link voci di menu delle nav */
 .main-nav li {
@@ -97,31 +125,35 @@ main {
 
 /* logo spotify in testa all'aside_page */
 .logo {
-  width: 60%;
+  width: 120px;
   padding: 20px 0px;
 }
 
-/* icone nav main dell'aside Home - Cerca - La tua libreria */
+/* icone nav main dell'aside (Home - Cerca - La tua libreria) */
 .ico_main_nav {
-  width: 25px;
+  width: 20px;
   margin-right: 3px;
 }
 
 /* zona crea playlist (icona + txt)*/
 .crea_pl {
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.crea_pl i:hover {
+  color: #fff;
 }
 
 .playlist-title {
-  /* height: 60px; */
+  height: 80px;
 }
 
 /* icona piu */
 .fa-plus {
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
   background-color: #a3a3a3;
-  padding: 10px;
+  padding: 8px;
 }
 
 .crea_pl {
@@ -130,7 +162,7 @@ main {
 }
 
 .crea_pl_txt {
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 /* aside nav secondaria playlist */
@@ -143,7 +175,7 @@ main {
 /* per far uscire la scroll-bar verticale su <ul> della secondary-nav */
 .playlist-list {
   background-color: pink;
-  height: calc(100% - 60px);
+  height: calc(100% - 80px);
   overflow-y: auto;
 }
 
@@ -153,7 +185,7 @@ main {
   /* position: fixed;
   bottom: 80px; */
   margin-top: auto;
-  width: 300px;
+  width: 200px;
   height: 80px;
   flex-shrink: 0;
 }
@@ -163,7 +195,7 @@ main {
 .main-content {
   overflow-y: auto;
   height: 100%;
-  width: calc(100% - 300px);
+  width: calc(100% - 200px);
   background-color: yellow;
   padding: 0px 20px;
 }
@@ -175,7 +207,7 @@ main {
 
 .upgrade {
   height: 80px;
-  width: calc(100% - 300px);
+  width: calc(100% - 200px);
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
