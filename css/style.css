@@ -18,8 +18,24 @@ body {
   margin-left: 10px;
 }
 
+.mgl_20 {
+  margin-left: 20px;
+}
+
+.mgr_10 {
+  margin-right: 10px;
+}
+
+.mgr_20 {
+  margin-right: 20px;
+}
+
 .mgb_20 {
   margin-bottom: 20px;
+}
+
+.mgb_10 {
+  margin-bottom: 10px;
 }
 
 .mgt_10 {
@@ -46,6 +62,22 @@ body {
 
 .pdl_10 {
   padding-left: 10px;
+}
+
+.pdr_20 {
+  padding-right: 20px;
+}
+
+.pdl_20 {
+  padding-left: 20px;
+}
+
+.pdr_30 {
+  padding-right: 30px;
+}
+
+.pdl_30 {
+  padding-left: 30px;
 }
 
 /* COLORS */
@@ -509,24 +541,25 @@ footer h6 {
 }
 
 .player_cmds .fa-play-circle {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 .player_cmds {
   text-align: center;
 }
 
-
 .player_cmds li {
   font-size: 14px;
   vertical-align: middle;
 }
 
-
-
 .player_bar {
   font-size: 12px;
   color; #fff;
+}
+
+.list_player_cmds a {
+  color: #fff;
 }
 
 .bar_total {
@@ -557,6 +590,11 @@ footer h6 {
   left: 100px;
   transform: translate(-50%, -50%);
 }
+
+.bar_circle:hover {
+  cursor: pointer
+}
+
 
 .time_prog, .time_end, .bar_total, .bar_prog {
   display: inline-block;
