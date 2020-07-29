@@ -779,5 +779,52 @@ footer h6 {
     font-size: 12px;
   }
 
+}
 
+@media screen and (max-width: 700px) {
+
+  .song_info, .heart_folder {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .footer_volume .fa-list, .footer_volume .fa-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .volume_bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .player_bar {
+    display: none;
+  }
+
+  .player_cmds .fa-random, .fa-redo-alt {
+    display: none;
+  }
+
+  .player_cmds {
+    margin-bottom: 0px;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+
+  .player_cmds .fa-step-forward, .fa-step-backward {
+    display: none;
+  }
+
+  .player_cmds {
+    margin-bottom: 0px;
+  }
 }
