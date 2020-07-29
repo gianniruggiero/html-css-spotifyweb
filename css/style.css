@@ -144,6 +144,13 @@ main {
   padding: 20px 0px;
 }
 
+.logo_small {
+  width: 25px;
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
 /* icone nav main dell'aside (Home - Cerca - La tua libreria) */
 .ico_main_nav {
   width: 20px;
@@ -531,16 +538,49 @@ footer  {
 @media screen and (max-width: 768px) {
 
   /* nasconde elementi della aside */
-  .heart_folder, .secondary-nav, .aside-bottom {
+  .heart_folder, .secondary-nav, .hr_line {
     display: none
   }
 
   .aside_page, .aside_bottom {
-    width: 80px;
+    width: 50px;
   }
 
   .main-content, .upgrade {
-    width: calc(100% - 80px);
+    width: calc(100% - 50px);
   }
+
+  .aside_page {
+    padding: 0px;
+  }
+
+  .main-nav a {
+    width: 100%
+  }
+
+  .main-nav li {
+    text-align: center;
+  }
+
+  .installa_sec a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .john_doe_sec a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo, .txt_home, .txt_cerca, .txt_libreria, .txt_installa, .txt_john_doe {
+    display: none;
+  }
+
+  .logo_small {
+    display: block;
+    margin: 0 auto;
+  }
+
+
 
 }
