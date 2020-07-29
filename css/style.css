@@ -617,7 +617,7 @@ footer h6 {
 }
 
 .volume_bar .bar_total {
-  width: 140px;
+  width: 120px;
 }
 
 .volume_bar {
@@ -625,8 +625,9 @@ footer h6 {
 }
 
 .footer_volume i {
+  font-size: 12px;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
 }
 
 .footer_volume {
@@ -647,7 +648,7 @@ footer h6 {
     width: 270px;
   }
 
-  
+
 }
 
 /* MEDIA QUERY SM */
