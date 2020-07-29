@@ -546,12 +546,12 @@ footer h6 {
 
 /* font icona PLAY comandi player */
 .player_cmds .fa-play-circle {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 /* font e allineamento icone comandi player */
 .player_cmds li {
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
 }
 
@@ -566,7 +566,7 @@ footer h6 {
 
 .bar_total {
   width: 400px;
-  height: 3px;
+  height: 4px;
   background-color: #535353;
   border-radius: 3px;
   position: relative;
@@ -574,7 +574,7 @@ footer h6 {
 
 .bar_prog {
   width: 100px;
-  height: 3px;
+  height: 4px;
   background-color: #adff2f;
   border-radius: 3px;
   position: absolute;
@@ -583,8 +583,8 @@ footer h6 {
 }
 
 .bar_circle {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
@@ -597,15 +597,18 @@ footer h6 {
   cursor: pointer
 }
 
-
 .time_prog, .time_end, .bar_total, .bar_prog {
   display: inline-block;
   vertical-align: middle;
 }
 
+.time_prog, .time_end {
+  font-size: 10px;
+}
+
+/* FOOTER ZONA DX */
 
 .footer_dx {
-  background-color: pink;
   /* flex-basis: calc(100% / 3); */
   display: flex;
   justify-content: flex-end;
@@ -613,10 +616,21 @@ footer h6 {
   height: 100%;
 }
 
+.volume_bar .bar_total {
+  width: 140px;
+}
+
+.volume_bar {
+  display: inline-block;
+}
+
+.footer_volume i {
+  color: #fff;
+  padding: 10px;
+}
+
 .footer_volume {
-  width: 250px;
-  height: 40px;
-  background-color: lightblue;
+  padding: 0px 10px;
 }
 
 
@@ -633,6 +647,7 @@ footer h6 {
     width: 270px;
   }
 
+  
 }
 
 /* MEDIA QUERY SM */
@@ -661,6 +676,20 @@ footer h6 {
   .bar_total {
     width: 170px;
     margin: 0px 10px;
+  }
+
+  /* aumnenta font e distanziamento voci di menu */
+  .nav_main_content li {
+    font-size: 15px;
+    padding-bottom: 24px;
+  }
+
+  .main-content h2 {
+    font-size: 28px;
+  }
+
+  .main-content h5 {
+    font-size: 12px;
   }
 
 }
@@ -734,5 +763,20 @@ footer h6 {
     font-size: 12px;
     font-weight: 700;
   }
+
+  /* aumnenta font e distanziamento voci di menu */
+  .nav_main_content li {
+    font-size: 15px;
+    padding-bottom: 24px;
+  }
+
+  .main-content h2 {
+    font-size: 28px;
+  }
+
+  .main-content h5 {
+    font-size: 12px;
+  }
+
 
 }
