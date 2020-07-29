@@ -407,6 +407,10 @@ main {
   display: none;
 }
 
+.popular .overlayer {
+  border-radius: 50%;
+}
+
 .box_track:hover .overlayer {
   display: block;
 }
