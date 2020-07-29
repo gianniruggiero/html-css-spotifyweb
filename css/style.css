@@ -497,7 +497,6 @@ footer h6 {
 }
 
 .footer_cx {
-  background-color: lightgrey;
   /* flex-basis: calc(100% / 3); */
   display: flex;
   align-items: center;
@@ -507,13 +506,23 @@ footer h6 {
 
 .player {
   /* width: 450px; */
-  background-color: red;
+}
+
+.player_cmds .fa-play-circle {
+  font-size: 22px;
 }
 
 .player_cmds {
-  font-size: 22px;
   text-align: center;
 }
+
+
+.player_cmds li {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+
 
 .player_bar {
   font-size: 12px;
@@ -551,6 +560,7 @@ footer h6 {
 
 .time_prog, .time_end, .bar_total, .bar_prog {
   display: inline-block;
+  vertical-align: middle;
 }
 
 
