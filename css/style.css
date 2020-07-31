@@ -359,8 +359,9 @@ main {
 }
 
 /* colore voci di menu della nav menu principale */
-.nav_main_content a {
+.nav_main_content li a {
   color: #717171;
+  border-bottom: 5px solid transparent;
 }
 
 /* barra verde per evidenziare voce di menu della nav menu principale */
@@ -377,10 +378,11 @@ main {
 /* colore hover voci di menu della nav menu principale */
 .nav_main_content a:hover {
   color: #fff;
+  /* border-bottom: 0px; */
 }
 
 /* all'active della voce di menu esce la barra verde */
-.nav_main_content a:active::after {
+.nav_main_content a:hover::after {
   content:"";
   display: block;
   width: 30px;
