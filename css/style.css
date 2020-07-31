@@ -38,6 +38,10 @@ body {
   margin-bottom: 10px;
 }
 
+.mgb_5 {
+  margin-bottom: 5px;
+}
+
 .mgt_10 {
   margin-top: 10px;
 }
@@ -533,28 +537,18 @@ footer h6 {
 /* FOOTER CX */
 
 .footer_cx {
-  /* flex-basis: calc(100% / 3); */
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
 
-.player {
-  /* width: 450px; */
-}
-
 .player_cmds {
   text-align: center;
 }
 
-/* font icona PLAY comandi player */
-.player_cmds .fa-play-circle {
-  font-size: 32px;
-}
-
 /* font e allineamento icone comandi player */
-.player_cmds li {
+.cmd_others {
   font-size: 16px;
   vertical-align: middle;
 }
@@ -564,10 +558,30 @@ footer h6 {
   color; #fff;
 }
 
+/* font icona PLAY comandi player */
+#li_play {
+  font-size: 32px;
+  width: 80px;
+  vertical-align: middle;
+}
+
+/* font icona PLAY comandi player */
+#li_play i:hover {
+  font-size: 40px;
+}
+
+
 .list_player_cmds a {
   color: #fff;
 }
 
+/* per gestire ingrandimento del ico_play */
+.list_player_cmds {
+  height: 44px;
+  line-height: 44px;
+}
+
+/* barra totale del player */
 .bar_total {
   width: 400px;
   height: 4px;
@@ -576,10 +590,10 @@ footer h6 {
   position: relative;
 }
 
+/* barra progressione del player */
 .bar_prog {
   width: 20%;
   height: 4px;
-  /* background-color: #adff2f; */
   background-color: #bababa;
   border-radius: 4px;
   position: absolute;
@@ -599,7 +613,7 @@ footer h6 {
   display: none;
 }
 
-/* all'hover visualizza la bar_prog e il bar_circle */
+/* all'hover cambia colore alla bar_prog, visulizza il pallino e il mouse pointer  */
 
 .bar_total:hover .bar_prog {
   background-color: #adff2f;
@@ -609,7 +623,7 @@ footer h6 {
   display: block;
 }
 
-.bar_total:hover .bar_prog {
+.bar_total:hover {
   cursor: pointer;
 }
 
