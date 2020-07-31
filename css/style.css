@@ -568,7 +568,7 @@ footer h6 {
   width: 400px;
   height: 4px;
   background-color: #535353;
-  border-radius: 3px;
+  border-radius: 4px;
   position: relative;
 }
 
@@ -576,7 +576,7 @@ footer h6 {
   width: 100px;
   height: 4px;
   background-color: #adff2f;
-  border-radius: 3px;
+  border-radius: 4px;
   position: absolute;
   top: 0px;
   left: 0px;
