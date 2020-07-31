@@ -355,13 +355,12 @@ main {
 /* distanziamento voci di menu della nav menu principale */
 .nav_main_content li {
   padding: 0px 10px;
-  color: #717171;
+  /* height: calc(100% + 5px) */
 }
 
 /* colore voci di menu della nav menu principale */
-.nav_main_content li a {
+.nav_main_content a {
   color: #717171;
-  border-bottom: 5px solid transparent;
 }
 
 /* barra verde per evidenziare voce di menu della nav menu principale */
@@ -378,11 +377,10 @@ main {
 /* colore hover voci di menu della nav menu principale */
 .nav_main_content a:hover {
   color: #fff;
-  /* border-bottom: 0px; */
 }
 
 /* all'active della voce di menu esce la barra verde */
-.nav_main_content a:hover::after {
+.nav_main_content a:active::after {
   content:"";
   display: block;
   width: 30px;
@@ -498,6 +496,8 @@ footer h6 {
   color: #717171;
 }
 
+/* FOOTER SX */
+
 .footer_sx {
   /* flex-basis: calc(100% / 3); */
   height: 100%;
@@ -529,6 +529,8 @@ footer h6 {
 .fa-heart:hover {
   color: #fff;
 }
+
+/* FOOTER CX */
 
 .footer_cx {
   /* flex-basis: calc(100% / 3); */
@@ -575,9 +577,10 @@ footer h6 {
 }
 
 .bar_prog {
-  width: 100px;
+  width: 20%;
   height: 4px;
-  background-color: #adff2f;
+  /* background-color: #adff2f; */
+  background-color: #bababa;
   border-radius: 4px;
   position: absolute;
   top: 0px;
@@ -591,13 +594,26 @@ footer h6 {
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 100px;
+  left: 100%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
-.bar_circle:hover {
-  cursor: pointer
+/* all'hover visualizza la bar_prog e il bar_circle */
+
+.bar_total:hover .bar_prog {
+  background-color: #adff2f;
 }
+
+.bar_total:hover .bar_circle {
+  display: block;
+}
+
+.bar_total:hover .bar_prog {
+  cursor: pointer;
+}
+
+/* allineamento asse y elementi player_bar */
 
 .time_prog, .time_end, .bar_total, .bar_prog {
   display: inline-block;

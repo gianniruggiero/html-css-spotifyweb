@@ -101,7 +101,7 @@
         <!-- nav contenuto principale -->
         <nav class="nav_main_content text-center">
           <ul class="nav_main_content_list list-inline de_point list_no_dec">
-            <li><a href="#">IN EVIDENZA</a></li>
+            <li><a id="evidenza" href="#">IN EVIDENZA</a></li>
             <li><a href="#">PODCAST</a></li>
             <li><a href="#">CLASSIFICHE</a></li>
             <li><a href="#">GENERI E MOOD</a></li>
@@ -262,6 +262,7 @@
       <div class="footer_cx">
         <!-- footer player -->
         <div class="player">
+          <!-- comandi player -->
           <div class="player_cmds mgb_10">
             <ul class="list_player_cmds list-inline col_white">
               <li class="pdr_20"><a href="#"><i class="fas fa-random"></i></a></li>
@@ -271,15 +272,21 @@
               <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
             </ul>
           </div>
+          <!-- /comandi player -->
+          <!-- barra progressione player -->
           <div class="player_bar">
+            <!-- label progressione play -->
             <div class="time_prog"><h4 class="col_white">0.25</h4></div>
+            <!-- /label progressione play -->
+
             <div class="bar_total mgl_20 mgr_20">
-              <div class="bar_prog"></div>
-              <div class="bar_circle"></div>
+              <div class="bar_prog">
+                <div class="bar_circle"></div>
+              </div>
             </div>
             <div class="time_end"><h4 class="col_white">4.35</h4> </div>
           </div>
-
+          <!-- barra progressione player -->
         </div>
         <!-- /footer player -->
       </div>
