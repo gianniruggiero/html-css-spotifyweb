@@ -336,7 +336,7 @@ main {
   border-radius: 20px;
   font-size: 11px;
   font-weight: 600;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 /* all'hover il button aumenta di dimensioni */
@@ -600,6 +600,7 @@ footer h6 {
   position: absolute;
   top: 0px;
   left: 0px;
+  transition: width 1s;
 }
 
 .bar_circle {
@@ -618,6 +619,7 @@ footer h6 {
 
 .bar_total:hover .bar_prog {
   background-color: #adff2f;
+  width: 100%;
 }
 
 .bar_total:hover .bar_circle {
